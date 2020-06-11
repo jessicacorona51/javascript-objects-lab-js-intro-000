@@ -10,3 +10,7 @@ function deleteFromObjectByKey (object, key) {
   delete clone[key];
   return clone;
 }
+function destructivelyDeleteFromOjectByKey (object, key) {
+  delete object[key];
+  return object;
+}
